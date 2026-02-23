@@ -685,3 +685,245 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+
+.projects {
+    padding: 100px 0;
+    background: #000;
+    color: #fff;
+}
+
+.projects .title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.projects .subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 60px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.project-card {
+    background: #111;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(255,255,255,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-link .project-card {
+    cursor: pointer;
+}
+
+.tags span {
+    display: inline-block;
+    background: #222;
+    padding: 6px 14px;
+    margin-right: 8px;
+    gap: 2px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.see-more-btn {
+    padding: 14px 40px;
+    font-size: 16px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.see-more-btn:hover {
+    background: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+:root {
+  --primary-color: #6366f1;
+  --bg-dark: #0f172a;
+  --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+.skills-section {
+  padding: 80px 5%;
+  background-color: var(--bg-dark);
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+  background: linear-gradient(to right, #fff, var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+.skill-category h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.testimonials {
+    padding: 80px 0;
+    height: 600px;
+    background: linear-gradient(135deg, #15181a, #051014, #181a1b);
+    color: white;
+    overflow: hidden;
+}
+
+.testimonials .title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.testimonial-wrapper {
+    overflow: hidden;
+}
+
+.testimonial-track {
+    display: flex;
+    animation: scroll 25s linear infinite;
+}
+
+.testimonial-card {
+    min-width: 300px;
+    min-height: 200px;
+    margin: 0 20px;
+    padding: 30px 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255,255,255,0.15);
+}
+
+.client-img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+}
+
+.client-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00e5ff;
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    color: #00e5ff;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
